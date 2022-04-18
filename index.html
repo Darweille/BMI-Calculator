@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta content="zh-tw" http-equiv="Content-Language" />
+<title>BMI計算</title>
+<style type="text/css">
+.auto-style1 {
+	text-align: center;
+}
+</style>
+
+<script type="text/JavaScript">
+<!--
+function BMI()
+{
+	var weight = Number(document.getElementById("idinputweight").value);
+	var height = Number(document.getElementById("idinputheight").value)/100;
+	var bmi = weight/(height^2);
+	document.getElementById("idinputresult").value = bmi.toFixed(2);
+}
+//-->
+</script>
+
+</head>
+
+<body>
+
+<p class="auto-style1">身高：<input id="idinputheight" name="nameinputheight" oninput="BMI()" type="number" value=""> 
+公分</p>
+<p class="auto-style1">&nbsp;</p>
+<p class="auto-style1">體重：<input id="idinputweight" name="nameinputweight" oninput="BMI()" type="number" value=""> 
+公斤</p>
+<p class="auto-style1">&nbsp;</p>
+
+<div id="result">
+<p class="auto-style1">您的BMI值為：<input id="idinputresult" name="nameinputresult" oninput="BMI()" type="number" value=""  readonly="readonly"></p>
+</div>
+
+</body>
+
+</html>
