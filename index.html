@@ -11,7 +11,7 @@ function BMI()
 {
 	var weight = Number(document.getElementById("idinputweight").value);
 	var height = Number(document.getElementById("idinputheight").value)/100;
-	var bmi = weight/(height^2);
+	var bmi = weight/(height*height);
 	document.getElementById("idinputresult").value = bmi.toFixed(2);
 }
 //-->
