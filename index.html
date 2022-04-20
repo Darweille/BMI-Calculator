@@ -4,27 +4,12 @@
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 <meta content="zh-tw" http-equiv="Content-Language">
 <title>BMI計算器</title>
-<link rel="stylesheet" type="text/css" href="mobile.css">
-<script type="text/JavaScript">
-<!--
-function BMI()
-{
-	var weight = Number(document.getElementById("idinputweight").value);
-	var height = Number(document.getElementById("idinputheight").value)/100;
-	var bmi = weight/(height*height);
-	document.getElementById("idinputresult").value = bmi.toFixed(2);
-}
-//-->
-</script>
-
+<link rel="stylesheet" type="text/css" href="general.css">
+<script type="text/javascript" src="convert.js"></script>
 </head>
-
 <body>
-
-<p>身高：<input id="idinputheight" name="nameinputheight" class="input" oninput="BMI()" type="number" value="" size="4"> 公分</p>
-<p>體重：<input id="idinputweight" name="nameinputweight" class="input" oninput="BMI()" type="number" value="" size="4"> 公斤</p>
-<p>BMI為：<input id="idinputresult" name="nameinputresult" class="input" type="number" value=""  readonly="readonly" size="4"></p>
-
+<p>身高: <input id="inputHeight" name="Height" class="inputClass1" oninput="BMI()" type="number" value="" size="4"> 公分</p>
+<p>體重: <input id="inputWeight" name="Weight" class="inputClass1" oninput="BMI()" type="number" value="" size="4"> 公斤</p>
+<p>BMI: <input id="inputBMI" name="BMI" class="inputClass1" type="number" value="" size="4" readonly="readonly"></p>
 </body>
-
 </html>
