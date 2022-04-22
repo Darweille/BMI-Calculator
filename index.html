@@ -8,8 +8,15 @@
 <script type="text/javascript" src="convert.js"></script>
 </head>
 <body>
-<p>身高: <input id="inputHeight" name="Height" class="inputClass1" oninput="BMI()" type="number" value="" size="4"> 公分</p>
-<p>體重: <input id="inputWeight" name="Weight" class="inputClass1" oninput="BMI()" type="number" value="" size="4"> 公斤</p>
-<p>BMI: <input id="inputBMI" name="BMI" class="inputClass1" type="number" value="" size="4" readonly="readonly"></p>
+<p id="stringTittle">BMI計算器</p>
+<p>身高：<input id="inputHeight" name="Height" class="inputClass1" oninput="BMI()" type="number" value="" size="4"> 公分</p>
+<p>體重：<input id="inputWeight" name="Weight" class="inputClass1" oninput="BMI()" type="number" value="" size="4"> 公斤</p>
+
+<div id="divResult">
+<p id="stringBMI">BMI <input id="inputBMI" name="BMI" class="inputClass1" type="number" value=""  readonly="readonly" size="4"></p>
+<p class="stringCategory"><span id="stringCategory1" class="stringClass1"></span></p>
+<p class="stringCategory"> <span id="stringCategory2" class="stringClass1"></span></p>
+</div>
+
 </body>
 </html>

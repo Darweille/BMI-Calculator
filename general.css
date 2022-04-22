@@ -1,6 +1,7 @@
 ﻿html *
 {
 	font-size: 90px;
+	margin: 15pt auto 15pt auto;
 }
 
 body
@@ -11,10 +12,17 @@ body
 	text-shadow:  -1px -1px white, 1px 1px #333
 }
 
+#stringTittle
+{
+	font-weight: bold;
+	color: rgba(0,0,0,0.7);
+	text-shadow: 2px 4px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+}
+
 .inputClass1
 {
 	color: #000000;
-	width: 220px;
+	width: 200px;
 	text-align: center;
 	background-color: transparent;
 	border-left-color: transparent;
@@ -26,5 +34,39 @@ body
 
 #inputBMI
 {
-	width: 410px;
+	width: 300px;
+}
+
+#divResult
+{
+	display: none;
+}
+
+#divResult p span
+{
+	color: #646464;
+	text-shadow: 2px 2px 3px #cccccc;
+}
+
+
+.stringCategory
+{
+	margin: -15pt auto auto auto;
+}
+
+#stringBMI
+{
+	margin: auto auto 30pt auto;
+	background-color: #eeeeee;
+}
+
+#stringCategory1
+{
+	font-size: 70px;
+	
+}
+
+#stringCategory2
+{
+	font-size: 50px;
 }
